@@ -1,11 +1,10 @@
-import React from "react";
-import Button from "./containers/Button";
-import Loading from "./containers/Loading";
 import Employees from "./pages/Employees";
-import { Provider } from "react-redux";
-let App = () => (
-  <div>
+import styled from "styled-components";
+
+const Container = styled.div``;
+const App = () => (
+  <Container>
     <Employees />
-  </div>
+  </Container>
 );
 export default App;

@@ -29,7 +29,6 @@ import {
 function* retrieveEmployees() {
   try {
     const { data } = yield call(getAllEmployeesDB);
-    console.log(data);
     yield downloadEmployeesOkAction(data.data);
   } catch (error) {
     yield put(downloadEmployeesErrorAction());
