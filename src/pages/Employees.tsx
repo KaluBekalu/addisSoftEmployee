@@ -58,15 +58,15 @@ let Employees = ({}) => {
           data={editData}
         />
       ) : null}
-      <H1>Addis soft employees tracker</H1>
 
-      <Button
-        style={{ marginBottom: 15 }}
-        onClick={() => setModalVisible(true)}
-      >
-        ADD
-      </Button>
       <Table>
+        <H1>Addis soft employees tracker</H1>
+        <Button
+          style={{ marginBottom: 15 }}
+          onClick={() => setModalVisible(true)}
+        >
+          ADD
+        </Button>
         <tbody>
           <Row>
             <TableHead>Id</TableHead>
